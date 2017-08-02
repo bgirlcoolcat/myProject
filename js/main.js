@@ -1,5 +1,8 @@
 $(document).ready(function() {
-	$('h2').click(function() {
-		console.log('clicked');
-	});
+  $('button').mouseenter(function() {
+    $(this).fadeTo('slow', 0.5);
+  });
+  $('button').mouseleave(function() {
+    $(this).fadeTo('slow', 1);
+  });
 });
